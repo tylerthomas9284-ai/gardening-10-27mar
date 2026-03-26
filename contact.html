@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Bloom Craft Gardens for professional garden and landscaping services in San Antonio. Free consultations available.">
+  <title>Contact Us | Bloom Craft Gardens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="header-nav">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+        </svg>
+        <span>Bloom Craft Gardens</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <button class="btn btn-primary" onclick="LeadFormModal.open()">Get Free Quote</button>
+      </div>
+      <button class="mobile-menu-btn" onclick="MobileMenu.toggle()" aria-label="Toggle menu">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav-link" onclick="MobileMenu.close()">Home</a>
+      <a href="about.html" class="nav-link" onclick="MobileMenu.close()">About</a>
+      <a href="services.html" class="nav-link" onclick="MobileMenu.close()">Services</a>
+      <a href="pricing.html" class="nav-link" onclick="MobileMenu.close()">Pricing</a>
+      <a href="contact.html" class="nav-link" onclick="MobileMenu.close()">Contact</a>
+      <a href="faq.html" class="nav-link" onclick="MobileMenu.close()">FAQ</a>
+      <button class="btn btn-primary btn-full" onclick="LeadFormModal.open(); MobileMenu.close()">Get Free Quote</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-16">
+    <div class="container">
+      <div class="text-center mb-12">
+        <h1 class="mb-4">Get In Touch</h1>
+        <p style="font-size: 1.25rem; color: #374151; max-width: 42rem; margin: 0 auto;">
+          We'd love to hear from you. Contact us today to discuss your garden needs and get a free consultation.
+        </p>
+      </div>
+
+      <!-- Contact Methods -->
+      <div class="grid grid-cols-3 mb-12">
+        <div class="card text-center hover-shadow">
+          <div class="card-content">
+            <div style="width: 4rem; height: 4rem; background: #dcfce7; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+              <span style="font-size: 2rem;">📞</span>
+            </div>
+            <h3 class="mb-2">Call Us</h3>
+            <a href="tel:+18052949208" style="color: #16a34a; text-decoration: underline; display: block; margin-bottom: 0.5rem;">+1-805-294-9208</a>
+            <p style="font-size: 0.875rem; color: #6b7280;">Mon-Fri: 8AM-6PM, Sat: 9AM-4PM</p>
+          </div>
+        </div>
+
+        <div class="card text-center hover-shadow">
+          <div class="card-content">
+            <div style="width: 4rem; height: 4rem; background: #dcfce7; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+              <span style="font-size: 2rem;">✉️</span>
+            </div>
+            <h3 class="mb-2">Email Us</h3>
+            <a href="mailto:help@bloomcraftgardens.site" style="color: #16a34a; text-decoration: underline; display: block; margin-bottom: 0.5rem;">help@bloomcraftgardens.site</a>
+            <p style="font-size: 0.875rem; color: #6b7280;">We respond within 24 hours</p>
+          </div>
+        </div>
+
+        <div class="card text-center hover-shadow">
+          <div class="card-content">
+            <div style="width: 4rem; height: 4rem; background: #dcfce7; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+              <span style="font-size: 2rem;">💬</span>
+            </div>
+            <h3 class="mb-2">Live Chat</h3>
+            <p style="color: #6b7280; margin-bottom: 0.5rem;">Coming Soon</p>
+            <p style="font-size: 0.875rem; color: #6b7280;">Quick answers to your questions</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form and Info Grid -->
+      <div class="grid grid-cols-2">
+        <!-- Contact Form -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Send us a Message</h3>
+          </div>
+          <div class="card-content">
+            <form onsubmit="handleContactForm(event)">
+              <div class="grid grid-cols-2">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Full Name *</label>
+                  <input type="text" class="form-input" id="contact-name" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-phone">Phone Number *</label>
+                  <input type="tel" class="form-input" id="contact-phone" name="phone" required placeholder="+1 (555) 123-4567">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address *</label>
+                <input type="email" class="form-input" id="contact-email" name="email" required placeholder="john.doe@email.com">
+              </div>
+
+              <div class="grid grid-cols-2">
+                <div class="form-group">
+                  <label class="form-label" for="contact-service">Service Needed *</label>
+                  <select class="form-select" id="contact-service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="garden-maintenance">Garden Maintenance</option>
+                    <option value="lawn-care">Lawn Care</option>
+                    <option value="landscape-design">Landscape Design</option>
+                    <option value="planting">Planting Services</option>
+                    <option value="mulching">Mulching & Soil Care</option>
+                    <option value="seasonal-cleanup">Seasonal Cleanup</option>
+                    <option value="tree-care">Tree & Shrub Care</option>
+                    <option value="irrigation">Irrigation Services</option>
+                    <option value="custom">Custom Project</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-property">Property Size</label>
+                  <select class="form-select" id="contact-property" name="propertySize">
+                    <option value="">Select size</option>
+                    <option value="small">Small (Under 5,000 sq ft)</option>
+                    <option value="medium">Medium (5,000-10,000 sq ft)</option>
+                    <option value="large">Large (10,000-20,000 sq ft)</option>
+                    <option value="xlarge">Extra Large (Over 20,000 sq ft)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-preferred">Preferred Contact Method</label>
+                <select class="form-select" id="contact-preferred" name="preferredContact">
+                  <option value="">How should we reach you?</option>
+                  <option value="phone">Phone Call</option>
+                  <option value="email">Email</option>
+                  <option value="text">Text Message</option>
+                  <option value="any">Any Method</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Tell Us About Your Project *</label>
+                <textarea class="form-textarea" id="contact-message" name="message" rows="5" required placeholder="Describe your garden service needs, current issues, or what you'd like to achieve..."></textarea>
+              </div>
+
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="contact-consent" name="consent" required>
+                <label class="checkbox-label" for="contact-consent">
+                  I agree to the <a href="privacy-policy.html" target="_blank" style="color: #16a34a; text-decoration: underline;">Privacy Policy</a> and 
+                  <a href="terms-conditions.html" target="_blank" style="color: #16a34a; text-decoration: underline;">Terms & Conditions</a>. 
+                  I consent to being contacted about my inquiry. *
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full btn-lg" style="margin-top: 1rem;">Send Message</button>
+
+              <p class="text-center" style="font-size: 0.875rem; color: #6b7280; margin-top: 1rem;">
+                We typically respond within 24 hours on business days
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div class="card">
+            <div class="card-header">
+              <h3>Contact Information</h3>
+            </div>
+            <div class="card-content">
+              <div style="margin-bottom: 1rem;">
+                <p style="font-weight: 600; margin-bottom: 0.25rem;">Office Address</p>
+                <p style="color: #374151;">
+                  10221 Desert Sands St Ste 204<br>
+                  San Antonio, TX 78216<br>
+                  United States
+                </p>
+              </div>
+              <div style="margin-bottom: 1rem;">
+                <p style="font-weight: 600; margin-bottom: 0.25rem;">Phone</p>
+                <a href="tel:+18052949208" style="color: #16a34a; text-decoration: underline;">+1-805-294-9208</a>
+              </div>
+              <div>
+                <p style="font-weight: 600; margin-bottom: 0.25rem;">Email</p>
+                <a href="mailto:help@bloomcraftgardens.site" style="color: #16a34a; text-decoration: underline;">help@bloomcraftgardens.site</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-green-50">
+            <div class="card-header">
+              <h3>Business Hours</h3>
+            </div>
+            <div class="card-content">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span style="font-weight: 600;">Monday - Friday:</span>
+                <span style="color: #374151;">8:00 AM - 6:00 PM</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span style="font-weight: 600;">Saturday:</span>
+                <span style="color: #374151;">9:00 AM - 4:00 PM</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="font-weight: 600;">Sunday:</span>
+                <span style="color: #374151;">Closed</span>
+              </div>
+              <p style="font-size: 0.875rem; color: #6b7280; margin-top: 1rem;">
+                * Emergency services may be available outside regular hours
+              </p>
+            </div>
+          </div>
+
+          <div class="card bg-green-600 text-white">
+            <div class="card-content">
+              <h3 class="mb-4" style="color: white;">Why Contact Us?</h3>
+              <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <span style="font-size: 1.5rem;">✓</span>
+                  <span>Free, no-obligation consultation</span>
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <span style="font-size: 1.5rem;">✓</span>
+                  <span>Same-day response during business hours</span>
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <span style="font-size: 1.5rem;">✓</span>
+                  <span>Detailed written quotes provided</span>
+                </li>
+                <li style="margin-bottom: 0.75rem; display: flex; gap: 0.5rem;">
+                  <span style="font-size: 1.5rem;">✓</span>
+                  <span>Expert advice from certified professionals</span>
+                </li>
+                <li style="display: flex; gap: 0.5rem;">
+                  <span style="font-size: 1.5rem;">✓</span>
+                  <span>Flexible scheduling to fit your needs</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <h3>Service Coverage Area</h3>
+            </div>
+            <div class="card-content">
+              <p style="color: #374151; margin-bottom: 0.75rem;">
+                We proudly serve the greater San Antonio area including:
+              </p>
+              <div class="grid grid-cols-2" style="font-size: 0.875rem; gap: 0.5rem;">
+                <div>• Alamo Heights</div>
+                <div>• Stone Oak</div>
+                <div>• Terrell Hills</div>
+                <div>• Olmos Park</div>
+                <div>• Leon Valley</div>
+                <div>• Shavano Park</div>
+                <div>• Downtown SA</div>
+                <div>• Dominion</div>
+              </div>
+              <p style="font-size: 0.875rem; color: #6b7280; margin-top: 0.75rem;">
+                Don't see your area? Contact us to check availability!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <svg style="width: 2rem; height: 2rem; color: #22c55e;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+            </svg>
+            <span style="font-weight: 700; color: white;">Bloom Craft Gardens</span>
+          </div>
+          <p style="font-size: 0.875rem;">Professional garden maintenance and landscaping services for San Antonio and surrounding communities.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul style="list-style: none;">
+            <li style="font-size: 0.875rem; margin-bottom: 0.75rem;">
+              10221 Desert Sands St Ste 204<br>
+              San Antonio, TX 78216<br>
+              United States
+            </li>
+            <li><a href="tel:+18052949208">+1-805-294-9208</a></li>
+            <li><a href="mailto:help@bloomcraftgardens.site">help@bloomcraftgardens.site</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bloom Craft Gardens. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner & Lead Form Modal -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-content">
+      <p class="cookie-text">
+        We use cookies to improve website functionality and analyze traffic. By continuing to use this site, you agree to our 
+        <a href="cookie-policy.html">Cookie Policy</a>.
+      </p>
+      <div class="cookie-buttons">
+        <button class="btn btn-outline" style="border-color: white; color: white;" onclick="CookieConsent.manage()">Manage Preferences</button>
+        <button class="btn btn-primary" onclick="CookieConsent.accept()">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="leadFormModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title">Get Your Free Quote</h3>
+        <button class="modal-close" onclick="LeadFormModal.close()" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="LeadFormModal.handleSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="lead-name">Name *</label>
+            <input type="text" class="form-input" id="lead-name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-email">Email *</label>
+            <input type="email" class="form-input" id="lead-email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-phone">Phone *</label>
+            <input type="tel" class="form-input" id="lead-phone" name="phone" required placeholder="+1 (555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-service">Service Needed *</label>
+            <select class="form-select" id="lead-service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="garden-maintenance">Garden Maintenance</option>
+              <option value="lawn-care">Lawn Care</option>
+              <option value="landscape-design">Landscape Design</option>
+              <option value="planting">Planting Services</option>
+              <option value="mulching">Mulching & Soil Care</option>
+              <option value="seasonal-cleanup">Seasonal Cleanup</option>
+              <option value="custom">Custom Project</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-message">Message</label>
+            <textarea class="form-textarea" id="lead-message" name="message" rows="3" placeholder="Tell us about your garden service needs..."></textarea>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="lead-consent" name="consent" required>
+            <label class="checkbox-label" for="lead-consent">
+              I agree to the <a href="privacy-policy.html" target="_blank" style="color: #16a34a; text-decoration: underline;">Privacy Policy</a> and 
+              <a href="terms-conditions.html" target="_blank" style="color: #16a34a; text-decoration: underline;">Terms & Conditions</a>. *
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full btn-lg" style="margin-top: 1rem;">Request Service</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

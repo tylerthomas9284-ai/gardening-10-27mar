@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequently asked questions about Bloom Craft Gardens services, pricing, scheduling, and more.">
+  <title>FAQ | Bloom Craft Gardens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="header-nav">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+        </svg>
+        <span>Bloom Craft Gardens</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <button class="btn btn-primary" onclick="LeadFormModal.open()">Get Free Quote</button>
+      </div>
+      <button class="mobile-menu-btn" onclick="MobileMenu.toggle()" aria-label="Toggle menu">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav-link" onclick="MobileMenu.close()">Home</a>
+      <a href="about.html" class="nav-link" onclick="MobileMenu.close()">About</a>
+      <a href="services.html" class="nav-link" onclick="MobileMenu.close()">Services</a>
+      <a href="pricing.html" class="nav-link" onclick="MobileMenu.close()">Pricing</a>
+      <a href="contact.html" class="nav-link" onclick="MobileMenu.close()">Contact</a>
+      <a href="faq.html" class="nav-link" onclick="MobileMenu.close()">FAQ</a>
+      <button class="btn btn-primary btn-full" onclick="LeadFormModal.open(); MobileMenu.close()">Get Free Quote</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-16">
+    <div class="container-sm">
+      <div class="text-center mb-12">
+        <h1 class="mb-4">Frequently Asked Questions</h1>
+        <p style="font-size: 1.25rem; color: #374151;">
+          Find answers to common questions about our services, pricing, and process
+        </p>
+      </div>
+
+      <!-- Getting Started -->
+      <div class="card mb-8">
+        <div class="card-content">
+          <h2 style="color: #16a34a; margin-bottom: 1rem;">Getting Started</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>Do you offer free consultations?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">Yes, we provide initial consultations to understand your garden care needs. During the consultation, we'll assess your property, discuss your goals, and provide recommendations for the best services for your outdoor space. There's absolutely no obligation.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>What areas do you service?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">We proudly serve San Antonio and surrounding communities including Alamo Heights, Stone Oak, Terrell Hills, Olmos Park, Leon Valley, Shavano Park, Downtown San Antonio, and Dominion. Contact us to confirm that we service your specific area.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>How do I schedule my first service?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">Simply call us at +1-805-294-9208, email help@bloomcraftgardens.site, or fill out our online contact form. We'll schedule a free consultation at your convenience to discuss your needs and provide a detailed quote.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services & Scheduling -->
+      <div class="card mb-8">
+        <div class="card-content">
+          <h2 style="color: #16a34a; margin-bottom: 1rem;">Services & Scheduling</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>How often should garden maintenance be scheduled?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">Most clients choose weekly or bi-weekly maintenance depending on garden size and the level of care needed. We'll work with you to create a schedule that keeps your garden looking its best throughout the year.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>Do you provide landscaping design services?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">Yes, we offer custom landscaping design for residential properties. Our team will create a personalized plan that enhances your property's curb appeal and creates the outdoor space you've always wanted.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>What if I need to cancel or reschedule my service?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">We understand that plans change. Please contact us at least 24 hours in advance if you need to cancel or reschedule your appointment, and we'll be happy to accommodate you. There are no cancellation fees with proper notice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing & Payment -->
+      <div class="card mb-8">
+        <div class="card-content">
+          <h2 style="color: #16a34a; margin-bottom: 1rem;">Pricing & Payment</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>How much do your services cost?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">Our pricing starts at $79 for basic garden maintenance visits. We offer three main service tiers plus custom packages. Visit our Pricing page for detailed information, or contact us for a personalized quote.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>Are there any hidden fees?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">Never. We believe in complete transparency. The quote we provide includes all standard services. The only additional charges would be for extra services you specifically request beyond the original scope of work.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>What forms of payment do you accept?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">We accept cash, checks, and all major credit cards (Visa, Mastercard, American Express, Discover). We offer convenient monthly billing for regular maintenance clients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Details -->
+      <div class="card mb-8">
+        <div class="card-content">
+          <h2 style="color: #16a34a; margin-bottom: 1rem;">Service Details</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>Do you provide your own equipment and tools?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">Yes, we bring all necessary professional-grade equipment and tools to complete your service. You don't need to provide anything.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>Are your gardening practices eco-friendly?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">Absolutely! We are committed to using sustainable, environmentally responsible gardening methods. This includes proper waste disposal, organic fertilizers when appropriate, and water-efficient practices.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>How long does a typical service visit take?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">The duration depends on the size of your property and the services requested. Basic maintenance visits typically take 1-2 hours, while comprehensive services may take 3-4 hours or more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business & Safety -->
+      <div class="card mb-12">
+        <div class="card-content">
+          <h2 style="color: #16a34a; margin-bottom: 1rem;">Business & Safety</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>Are you licensed and insured?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">Yes, Bloom Craft Gardens is fully licensed and insured to protect both our team and your property. We carry general liability insurance and workers' compensation coverage.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" onclick="Accordion.toggle(this)">
+                <span>What if I'm not satisfied with the service?</span>
+                <span>▼</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: #374151;">We stand behind our work with a 100% satisfaction guarantee. If you're not completely happy with any aspect of our service, simply let us know within 24 hours and we'll return to make it right at no additional charge.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Still Have Questions CTA -->
+      <div class="card" style="background: #f0fdf4; border: 1px solid #16a34a;">
+        <div class="card-content text-center" style="padding: 2rem;">
+          <h2 class="mb-4">Still Have Questions?</h2>
+          <p style="font-size: 1.125rem; color: #374151; margin-bottom: 2rem;">
+            We're here to help! Reach out to us and we'll be happy to answer any questions you may have.
+          </p>
+          <div class="grid grid-cols-3 mb-8">
+            <a href="tel:+18052949208" class="card text-center hover-shadow" style="text-decoration: none;">
+              <div class="card-content">
+                <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">📞</span>
+                <p style="font-weight: 600; margin-bottom: 0.25rem;">Call Us</p>
+                <p style="font-size: 0.875rem; color: #6b7280;">+1-805-294-9208</p>
+              </div>
+            </a>
+            <a href="mailto:help@bloomcraftgardens.site" class="card text-center hover-shadow" style="text-decoration: none;">
+              <div class="card-content">
+                <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">✉️</span>
+                <p style="font-weight: 600; margin-bottom: 0.25rem;">Email Us</p>
+                <p style="font-size: 0.875rem; color: #6b7280;">help@bloomcraftgardens.site</p>
+              </div>
+            </a>
+            <button onclick="LeadFormModal.open()" class="card text-center hover-shadow" style="border: none; background: white; cursor: pointer;">
+              <div class="card-content">
+                <span style="font-size: 2rem; display: block; margin-bottom: 0.5rem;">💬</span>
+                <p style="font-weight: 600; margin-bottom: 0.25rem;">Online Form</p>
+                <p style="font-size: 0.875rem; color: #6b7280;">Quick response</p>
+              </div>
+            </button>
+          </div>
+          <button class="btn btn-primary btn-lg" onclick="LeadFormModal.open()">Get Your Free Consultation</button>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="mt-12 text-center">
+        <p style="color: #6b7280; margin-bottom: 1rem;">Looking for more information?</p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="services.html" class="btn btn-outline">View Our Services</a>
+          <a href="pricing.html" class="btn btn-outline">See Pricing</a>
+          <a href="about.html" class="btn btn-outline">About Us</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <svg style="width: 2rem; height: 2rem; color: #22c55e;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+            </svg>
+            <span style="font-weight: 700; color: white;">Bloom Craft Gardens</span>
+          </div>
+          <p style="font-size: 0.875rem;">Professional garden maintenance and landscaping services for San Antonio and surrounding communities.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul style="list-style: none;">
+            <li style="font-size: 0.875rem; margin-bottom: 0.75rem;">
+              10221 Desert Sands St Ste 204<br>
+              San Antonio, TX 78216<br>
+              United States
+            </li>
+            <li><a href="tel:+18052949208">+1-805-294-9208</a></li>
+            <li><a href="mailto:help@bloomcraftgardens.site">help@bloomcraftgardens.site</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bloom Craft Gardens. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner & Lead Form Modal -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-content">
+      <p class="cookie-text">
+        We use cookies to improve website functionality and analyze traffic. By continuing to use this site, you agree to our 
+        <a href="cookie-policy.html">Cookie Policy</a>.
+      </p>
+      <div class="cookie-buttons">
+        <button class="btn btn-outline" style="border-color: white; color: white;" onclick="CookieConsent.manage()">Manage Preferences</button>
+        <button class="btn btn-primary" onclick="CookieConsent.accept()">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="leadFormModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title">Get Your Free Quote</h3>
+        <button class="modal-close" onclick="LeadFormModal.close()" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="LeadFormModal.handleSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="lead-name">Name *</label>
+            <input type="text" class="form-input" id="lead-name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-email">Email *</label>
+            <input type="email" class="form-input" id="lead-email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-phone">Phone *</label>
+            <input type="tel" class="form-input" id="lead-phone" name="phone" required placeholder="+1 (555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-service">Service Needed *</label>
+            <select class="form-select" id="lead-service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="garden-maintenance">Garden Maintenance</option>
+              <option value="lawn-care">Lawn Care</option>
+              <option value="landscape-design">Landscape Design</option>
+              <option value="planting">Planting Services</option>
+              <option value="mulching">Mulching & Soil Care</option>
+              <option value="seasonal-cleanup">Seasonal Cleanup</option>
+              <option value="custom">Custom Project</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-message">Message</label>
+            <textarea class="form-textarea" id="lead-message" name="message" rows="3" placeholder="Tell us about your garden service needs..."></textarea>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="lead-consent" name="consent" required>
+            <label class="checkbox-label" for="lead-consent">
+              I agree to the <a href="privacy-policy.html" target="_blank" style="color: #16a34a; text-decoration: underline;">Privacy Policy</a> and 
+              <a href="terms-conditions.html" target="_blank" style="color: #16a34a; text-decoration: underline;">Terms & Conditions</a>. *
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full btn-lg" style="margin-top: 1rem;">Request Service</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

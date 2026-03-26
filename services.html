@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional garden and landscaping services including maintenance, lawn care, design, planting, and seasonal cleanups in San Antonio.">
+  <title>Our Services | Bloom Craft Gardens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="header-nav">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+        </svg>
+        <span>Bloom Craft Gardens</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <button class="btn btn-primary" onclick="LeadFormModal.open()">Get Free Quote</button>
+      </div>
+      <button class="mobile-menu-btn" onclick="MobileMenu.toggle()" aria-label="Toggle menu">
+        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="nav-link" onclick="MobileMenu.close()">Home</a>
+      <a href="about.html" class="nav-link" onclick="MobileMenu.close()">About</a>
+      <a href="services.html" class="nav-link" onclick="MobileMenu.close()">Services</a>
+      <a href="pricing.html" class="nav-link" onclick="MobileMenu.close()">Pricing</a>
+      <a href="contact.html" class="nav-link" onclick="MobileMenu.close()">Contact</a>
+      <a href="faq.html" class="nav-link" onclick="MobileMenu.close()">FAQ</a>
+      <button class="btn btn-primary btn-full" onclick="LeadFormModal.open(); MobileMenu.close()">Get Free Quote</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-16">
+    <div class="container">
+      <div class="text-center mb-16">
+        <h1 class="mb-6">Our Services</h1>
+        <p style="font-size: 1.25rem; color: #374151; max-width: 48rem; margin: 0 auto;">
+          Professional garden and landscaping services tailored to your needs. From routine maintenance to complete landscape transformations, we have the expertise to make your vision a reality.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-3 mb-16">
+        <!-- Garden Maintenance -->
+        <div class="card hover-shadow">
+          <img src="https://images.unsplash.com/photo-1765822019705-e13a02ea9bae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYXJkZW4lMjBtYWludGVuYW5jZSUyMHBydW5pbmclMjBwbGFudHN8ZW58MXx8fHwxNzczNzQxNjA3fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Garden Maintenance" style="width: 100%; height: 192px; object-fit: cover;">
+          <div class="card-header">
+            <h3 class="mb-2">Garden Maintenance</h3>
+            <p style="color: #6b7280; font-size: 0.875rem;">Routine garden care including pruning, trimming, weeding, and seasonal upkeep.</p>
+          </div>
+          <div class="card-content">
+            <p style="color: #374151; margin-bottom: 1rem;">Keep your garden looking pristine year-round with our comprehensive maintenance services.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Benefits:</h4>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Regular health checks for plants
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Professional pruning techniques
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Weed control and prevention
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151;">
+                <span style="color: #16a34a;">✓</span> Pest and disease monitoring
+              </li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+              <span style="color: #16a34a; font-weight: 600;">Starting at $79/visit</span>
+              <button class="btn btn-outline" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="LeadFormModal.open()">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lawn Care -->
+        <div class="card hover-shadow">
+          <img src="https://images.unsplash.com/photo-1766246721288-abda35d6d20d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYXduJTIwbWFpbnRlbmFuY2UlMjBtb3dpbmclMjBncmFzc3xlbnwxfHx8fDE3NzM3NDE2MDd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Lawn Care" style="width: 100%; height: 192px; object-fit: cover;">
+          <div class="card-header">
+            <h3 class="mb-2">Lawn Care</h3>
+            <p style="color: #6b7280; font-size: 0.875rem;">Professional lawn mowing, fertilization programs, and grass health improvement.</p>
+          </div>
+          <div class="card-content">
+            <p style="color: #374151; margin-bottom: 1rem;">Transform your lawn into a lush, green paradise with expert care services.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Benefits:</h4>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Weekly or bi-weekly mowing
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Precision edging and trimming
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Customized fertilization schedule
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151;">
+                <span style="color: #16a34a;">✓</span> Aeration and overseeding
+              </li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+              <span style="color: #16a34a; font-weight: 600;">Included in packages</span>
+              <button class="btn btn-outline" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="LeadFormModal.open()">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Landscape Design -->
+        <div class="card hover-shadow">
+          <img src="https://images.unsplash.com/photo-1764697758865-e1d6c3bd00cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYW5kc2NhcGUlMjBkZXNpZ24lMjBiYWNreWFyZCUyMGdhcmRlbnxlbnwxfHx8fDE3NzM3NDE2MDd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Landscape Design" style="width: 100%; height: 192px; object-fit: cover;">
+          <div class="card-header">
+            <h3 class="mb-2">Landscape Design</h3>
+            <p style="color: #6b7280; font-size: 0.875rem;">Custom garden and landscape planning to improve curb appeal and outdoor comfort.</p>
+          </div>
+          <div class="card-content">
+            <p style="color: #374151; margin-bottom: 1rem;">Create the outdoor space of your dreams with professional landscape design services.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Benefits:</h4>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Initial consultation and site analysis
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Custom design plans and sketches
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Plant and material recommendations
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151;">
+                <span style="color: #16a34a;">✓</span> Phased implementation options
+              </li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+              <span style="color: #16a34a; font-weight: 600;">Custom quotes available</span>
+              <button class="btn btn-outline" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="LeadFormModal.open()">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Planting & Garden Installation -->
+        <div class="card hover-shadow">
+          <img src="https://images.unsplash.com/photo-1597868067409-da83ce22ed76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwbGFudGluZyUyMGZsb3dlcnMlMjBnYXJkZW4lMjB3b3JrfGVufDF8fHx8MTc3Mzc0MTYwNnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Planting Services" style="width: 100%; height: 192px; object-fit: cover;">
+          <div class="card-header">
+            <h3 class="mb-2">Planting & Garden Installation</h3>
+            <p style="color: #6b7280; font-size: 0.875rem;">Planting flowers, shrubs, and decorative plants suitable for the climate.</p>
+          </div>
+          <div class="card-content">
+            <p style="color: #374151; margin-bottom: 1rem;">Enhance your garden with vibrant plants carefully selected for San Antonio's climate.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Benefits:</h4>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Climate-appropriate plant selection
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Proper soil preparation
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Strategic placement for growth
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151;">
+                <span style="color: #16a34a;">✓</span> Post-planting care instructions
+              </li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+              <span style="color: #16a34a; font-weight: 600;">Starting at $150 + materials</span>
+              <button class="btn btn-outline" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="LeadFormModal.open()">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mulching & Soil Care -->
+        <div class="card hover-shadow">
+          <img src="https://images.unsplash.com/photo-1768264312532-7780b660b74a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtdWxjaCUyMHNvaWwlMjBnYXJkZW5pbmclMjBjYXJlfGVufDF8fHx8MTc3Mzc0MTYwOHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Mulching & Soil Care" style="width: 100%; height: 192px; object-fit: cover;">
+          <div class="card-header">
+            <h3 class="mb-2">Mulching & Soil Care</h3>
+            <p style="color: #6b7280; font-size: 0.875rem;">Improve plant health with soil conditioning and mulch installation.</p>
+          </div>
+          <div class="card-content">
+            <p style="color: #374151; margin-bottom: 1rem;">Healthy soil is the foundation of a beautiful garden with proper mulching services.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Benefits:</h4>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Premium mulch selection
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Soil pH testing and amendments
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Weed suppression
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151;">
+                <span style="color: #16a34a;">✓</span> Moisture conservation
+              </li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+              <span style="color: #16a34a; font-weight: 600;">Starting at $120 + materials</span>
+              <button class="btn btn-outline" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="LeadFormModal.open()">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seasonal Cleanups -->
+        <div class="card hover-shadow">
+          <img src="https://images.unsplash.com/photo-1672834178402-4274120590ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWFzb25hbCUyMGdhcmRlbiUyMGNsZWFudXAlMjBsZWF2ZXN8ZW58MXx8fHwxNzczNzQxNjA4fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Seasonal Cleanup" style="width: 100%; height: 192px; object-fit: cover;">
+          <div class="card-header">
+            <h3 class="mb-2">Seasonal Cleanups</h3>
+            <p style="color: #6b7280; font-size: 0.875rem;">Spring and fall cleanup services to prepare gardens for seasonal changes.</p>
+          </div>
+          <div class="card-content">
+            <p style="color: #374151; margin-bottom: 1rem;">Prepare your garden for changing seasons with our thorough cleanup services.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Benefits:</h4>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Leaf and debris removal
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Garden bed preparation
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Gutter cleaning available
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151;">
+                <span style="color: #16a34a;">✓</span> Seasonal planting recommendations
+              </li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+              <span style="color: #16a34a; font-weight: 600;">Starting at $99</span>
+              <button class="btn btn-outline" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="LeadFormModal.open()">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tree & Shrub Care -->
+        <div class="card hover-shadow">
+          <img src="https://images.unsplash.com/photo-1626328996681-80608e0240a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmVlJTIwcHJ1bmluZyUyMHRyaW1taW5nJTIwcHJvZmVzc2lvbmFsfGVufDF8fHx8MTc3Mzc0MjUzNXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Tree & Shrub Care" style="width: 100%; height: 192px; object-fit: cover;">
+          <div class="card-header">
+            <h3 class="mb-2">Tree & Shrub Care</h3>
+            <p style="color: #6b7280; font-size: 0.875rem;">Professional tree trimming, pruning, and health assessments.</p>
+          </div>
+          <div class="card-content">
+            <p style="color: #374151; margin-bottom: 1rem;">Keep your trees and shrubs healthy and well-shaped with specialized care services.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Benefits:</h4>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> ISA certified arborist care
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Proper pruning techniques
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Disease and pest treatment
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151;">
+                <span style="color: #16a34a;">✓</span> Safety hazard assessment
+              </li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+              <span style="color: #16a34a; font-weight: 600;">Custom quotes based on scope</span>
+              <button class="btn btn-outline" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="LeadFormModal.open()">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Irrigation Services -->
+        <div class="card hover-shadow">
+          <img src="https://images.unsplash.com/photo-1768796373541-fabc238c6eec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpcnJpZ2F0aW9uJTIwc3ByaW5rbGVyJTIwc3lzdGVtJTIwZ2FyZGVufGVufDF8fHx8MTc3MzcxNDMxMXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Irrigation Services" style="width: 100%; height: 192px; object-fit: cover;">
+          <div class="card-header">
+            <h3 class="mb-2">Irrigation Services</h3>
+            <p style="color: #6b7280; font-size: 0.875rem;">Sprinkler system installation, repair, and maintenance.</p>
+          </div>
+          <div class="card-content">
+            <p style="color: #374151; margin-bottom: 1rem;">Ensure your garden gets the right amount of water with our irrigation services.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Benefits:</h4>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Water-efficient system design
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Sprinkler head repair/replacement
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Seasonal system winterization
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151;">
+                <span style="color: #16a34a;">✓</span> Smart controller installation
+              </li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+              <span style="color: #16a34a; font-weight: 600;">Starting at $85 for repairs</span>
+              <button class="btn btn-outline" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="LeadFormModal.open()">Get Quote</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Garden Bed Edging -->
+        <div class="card hover-shadow">
+          <img src="https://images.unsplash.com/photo-1766189790526-b699899d1013?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYXJkZW4lMjBiZWQlMjBlZGdpbmclMjBsYW5kc2NhcGluZ3xlbnwxfHx8fDE3NzM3NDI1MzV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Garden Bed Edging" style="width: 100%; height: 192px; object-fit: cover;">
+          <div class="card-header">
+            <h3 class="mb-2">Garden Bed Edging</h3>
+            <p style="color: #6b7280; font-size: 0.875rem;">Clean, defined borders for flower beds and landscaping areas.</p>
+          </div>
+          <div class="card-content">
+            <p style="color: #374151; margin-bottom: 1rem;">Create crisp, professional-looking edges for your garden beds and landscaping.</p>
+            <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Benefits:</h4>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Metal, stone, or wood options
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Prevents grass encroachment
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151; margin-bottom: 0.25rem;">
+                <span style="color: #16a34a;">✓</span> Low-maintenance solutions
+              </li>
+              <li style="display: flex; gap: 0.5rem; font-size: 0.875rem; color: #374151;">
+                <span style="color: #16a34a;">✓</span> Professional installation
+              </li>
+            </ul>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+              <span style="color: #16a34a; font-weight: 600;">Starting at $8 per linear foot</span>
+              <button class="btn btn-outline" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="LeadFormModal.open()">Get Quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How Our Service Works -->
+      <div class="mb-16 bg-green-50" style="padding: 3rem; border-radius: 0.5rem;">
+        <div class="text-center mb-12">
+          <h2 class="mb-4">How Our Service Works</h2>
+          <p style="font-size: 1.125rem; color: #374151;">Simple, transparent process from start to finish</p>
+        </div>
+        <div class="grid grid-cols-4">
+          <div style="position: relative;">
+            <div class="card" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <div class="card-content">
+                <div style="width: 3rem; height: 3rem; background: #16a34a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 1rem;">1</div>
+                <h3 class="mb-2">Contact Us</h3>
+                <p style="color: #374151; font-size: 0.875rem;">Reach out via phone, email, or our online form to schedule your free consultation.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <div class="card-content">
+                <div style="width: 3rem; height: 3rem; background: #16a34a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 1rem;">2</div>
+                <h3 class="mb-2">Consultation</h3>
+                <p style="color: #374151; font-size: 0.875rem;">We visit your property to assess needs and discuss your vision and budget.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <div class="card-content">
+                <div style="width: 3rem; height: 3rem; background: #16a34a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 1rem;">3</div>
+                <h3 class="mb-2">Custom Proposal</h3>
+                <p style="color: #374151; font-size: 0.875rem;">Receive a detailed proposal with services, timeline, and transparent pricing.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+              <div class="card-content">
+                <div style="width: 3rem; height: 3rem; background: #16a34a; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 1rem;">4</div>
+                <h3 class="mb-2">Service Delivery</h3>
+                <p style="color: #374151; font-size: 0.875rem;">Our expert team arrives on schedule to transform your outdoor space.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Our Services -->
+      <div class="mb-16">
+        <div class="text-center mb-12">
+          <h2 class="mb-4">Why Choose Our Services</h2>
+        </div>
+        <div class="grid grid-cols-3">
+          <div class="card">
+            <div class="card-header">
+              <div style="width: 4rem; height: 4rem; background: #dcfce7; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <span style="font-size: 2rem;">✓</span>
+              </div>
+              <h3>Quality Guaranteed</h3>
+            </div>
+            <div class="card-content">
+              <p style="color: #374151;">We stand behind every service with our 100% satisfaction guarantee. If you're not happy, we'll make it right at no additional cost.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div style="width: 4rem; height: 4rem; background: #dcfce7; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <span style="font-size: 2rem;">⏰</span>
+              </div>
+              <h3>Reliable Scheduling</h3>
+            </div>
+            <div class="card-content">
+              <p style="color: #374151;">We show up on time, every time. Our consistent scheduling means you can count on us to keep your garden looking great year-round.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div style="width: 4rem; height: 4rem; background: #dcfce7; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <span style="font-size: 2rem;">🌱</span>
+              </div>
+              <h3>Eco-Friendly Methods</h3>
+            </div>
+            <div class="card-content">
+              <p style="color: #374151;">All our services use sustainable, environmentally responsible practices that protect your property and the planet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Areas CTA -->
+      <div class="card mb-16" style="background: #16a34a; color: white;">
+        <div class="card-content" style="padding: 3rem; text-align: center;">
+          <h2 class="mb-4" style="color: white;">Serving San Antonio & Surrounding Areas</h2>
+          <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">
+            We proudly provide professional garden services throughout the greater San Antonio area, including Alamo Heights, Stone Oak, Terrell Hills, and beyond.
+          </p>
+          <button class="btn btn-lg" style="background: white; color: #16a34a;" onclick="LeadFormModal.open()">Check Service Availability</button>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div class="text-center bg-gray-50" style="padding: 3rem; border-radius: 0.5rem;">
+        <h2 class="mb-4">Ready to Get Started?</h2>
+        <p style="font-size: 1.25rem; color: #374151; margin-bottom: 2rem; max-width: 42rem; margin-left: auto; margin-right: auto;">
+          Transform your outdoor space with professional garden services from Bloom Craft Gardens. Contact us today for a free consultation and quote.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <button class="btn btn-primary btn-lg" onclick="LeadFormModal.open()">Get Free Quote</button>
+          <a href="pricing.html" class="btn btn-outline btn-lg">View Pricing</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+            <svg style="width: 2rem; height: 2rem; color: #22c55e;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+            </svg>
+            <span style="font-weight: 700; color: white;">Bloom Craft Gardens</span>
+          </div>
+          <p style="font-size: 0.875rem;">Professional garden maintenance and landscaping services for San Antonio and surrounding communities.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul style="list-style: none;">
+            <li style="font-size: 0.875rem; margin-bottom: 0.75rem;">
+              10221 Desert Sands St Ste 204<br>
+              San Antonio, TX 78216<br>
+              United States
+            </li>
+            <li><a href="tel:+18052949208">+1-805-294-9208</a></li>
+            <li><a href="mailto:help@bloomcraftgardens.site">help@bloomcraftgardens.site</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bloom Craft Gardens. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Banner & Lead Form Modal -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-content">
+      <p class="cookie-text">
+        We use cookies to improve website functionality and analyze traffic. By continuing to use this site, you agree to our 
+        <a href="cookie-policy.html">Cookie Policy</a>.
+      </p>
+      <div class="cookie-buttons">
+        <button class="btn btn-outline" style="border-color: white; color: white;" onclick="CookieConsent.manage()">Manage Preferences</button>
+        <button class="btn btn-primary" onclick="CookieConsent.accept()">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="leadFormModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title">Get Your Free Quote</h3>
+        <button class="modal-close" onclick="LeadFormModal.close()" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="LeadFormModal.handleSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="lead-name">Name *</label>
+            <input type="text" class="form-input" id="lead-name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-email">Email *</label>
+            <input type="email" class="form-input" id="lead-email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-phone">Phone *</label>
+            <input type="tel" class="form-input" id="lead-phone" name="phone" required placeholder="+1 (555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-service">Service Needed *</label>
+            <select class="form-select" id="lead-service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="garden-maintenance">Garden Maintenance</option>
+              <option value="lawn-care">Lawn Care</option>
+              <option value="landscape-design">Landscape Design</option>
+              <option value="planting">Planting Services</option>
+              <option value="mulching">Mulching & Soil Care</option>
+              <option value="seasonal-cleanup">Seasonal Cleanup</option>
+              <option value="custom">Custom Project</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="lead-message">Message</label>
+            <textarea class="form-textarea" id="lead-message" name="message" rows="3" placeholder="Tell us about your garden service needs..."></textarea>
+          </div>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" id="lead-consent" name="consent" required>
+            <label class="checkbox-label" for="lead-consent">
+              I agree to the <a href="privacy-policy.html" target="_blank" style="color: #16a34a; text-decoration: underline;">Privacy Policy</a> and 
+              <a href="terms-conditions.html" target="_blank" style="color: #16a34a; text-decoration: underline;">Terms & Conditions</a>. *
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full btn-lg" style="margin-top: 1rem;">Request Service</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
